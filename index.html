@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4a0e1e">
+<meta name="description" content="A royal traditional wedding invitation for Ngariyanbam Rojit Singh and Aribam Jessica Sharma.">
+<title>Rojit & Jessica — Wedding Invitation</title>
+<style>
+:root{--wine:#4a0e1e;--wine2:#6f1d32;--gold:#d9b56d;--cream:#fff8eb;--ink:#3a1720;--rose:#f4e2d6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--wine);color:var(--cream);font-family:Georgia,"Times New Roman",serif}
+button,a{font:inherit}
+button{cursor:pointer}
+.page{min-height:100vh;overflow:hidden;background:
+ radial-gradient(ellipse at 50% 0%,#79263b 0%,transparent 55%),
+ linear-gradient(145deg,#310914,#641a2d 55%,#350a15)}
+.frame{max-width:820px;margin:0 auto;padding:18px}
+.hero{min-height:94vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding:30px 16px}
+.card{width:min(100%,650px);position:relative;padding:clamp(28px,7vw,62px) clamp(20px,6vw,54px);border:1px solid var(--gold);outline:1px solid #d9b56d66;outline-offset:8px;background:linear-gradient(135deg,#4b0d20ee,#6d1c30e8);box-shadow:0 22px 70px #17030a88}
+.card:before,.card:after{content:"✦";position:absolute;color:var(--gold);font-size:30px}
+.card:before{top:12px;left:16px}.card:after{bottom:12px;right:16px}
+.ornament{font-size:28px;color:var(--gold);letter-spacing:9px;margin-bottom:16px}
+.kicker{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#f1d8a5}
+h1{font-size:clamp(42px,10vw,76px);font-weight:400;line-height:1.04;margin:16px 0;color:#fff2d6}
+.amp{font-style:italic;color:var(--gold);font-size:.75em}
+.subtitle{font-size:clamp(16px,3vw,22px);line-height:1.7;color:#f7e7d2}
+.date{display:inline-block;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:12px 22px;margin:22px 0;color:#ffe9b8;letter-spacing:2px}
+.primary{border:1px solid var(--gold);background:var(--gold);color:#41101d;padding:13px 22px;border-radius:2px;letter-spacing:1px;text-transform:uppercase;font-size:12px;font-weight:bold;transition:.2s}
+.primary:hover{background:#f3d89c;transform:translateY(-2px)}
+.ghost{border:1px solid var(--gold);background:transparent;color:#ffedc5;padding:12px 18px;border-radius:2px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.scrollhint{margin-top:28px;color:#d9b56d99;font-size:11px;letter-spacing:3px}
+section{padding:72px 18px;text-align:center}
+.section-inner{max-width:700px;margin:auto}
+.section-title{font-size:clamp(28px,6vw,44px);font-weight:400;color:#ffedc5;margin:0 0 16px}
+.gold{color:var(--gold)}
+.copy{font-size:18px;line-height:1.85;color:#f5e5d6}
+.divider{color:var(--gold);letter-spacing:8px;margin:24px 0}
+.photo-placeholder{width:min(100%,420px);aspect-ratio:4/3;margin:28px auto;border:1px dashed #d9b56d88;background:linear-gradient(135deg,#7b3442,#41101d);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#f4dcae;gap:10px}
+.photo-placeholder small{font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:30px 0}
+.countbox{min-width:78px;border:1px solid #d9b56d77;padding:15px 10px;background:#3c0b18aa}
+.countbox strong{display:block;font-size:30px;color:#ffe5a5;font-weight:400}
+.countbox span{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#e6c78c}
+.event{border:1px solid #d9b56d77;padding:26px;margin:28px auto;max-width:520px;background:#3b0b18aa}
+.event h3{font-size:23px;font-weight:400;color:#ffedc5;margin:0 0 10px}
+.event p{margin:7px 0;color:#f3dfcc;line-height:1.7}
+.buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+footer{text-align:center;padding:32px 15px 45px;color:#d9b56d;font-size:12px;letter-spacing:2px}
+.modal{position:fixed;inset:0;background:#15030be8;display:none;align-items:center;justify-content:center;padding:20px;z-index:5}
+.modal.open{display:flex}
+.modalbox{width:min(100%,450px);background:#5a1428;border:1px solid var(--gold);padding:26px;text-align:center}
+.modalbox input{width:100%;padding:12px;margin:14px 0;background:#fff8eb;border:1px solid var(--gold);color:#3a1720}
+.modalbox .buttons{margin-top:10px}
+@media(max-width:480px){.frame{padding:12px}.hero{min-height:90vh}.copy{font-size:16px}.countbox{min-width:68px}.card{outline-offset:4px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="frame">
+    <header class="hero" id="home">
+      <div class="card">
+        <div class="ornament">❧ ✦ ❧</div>
+        <div class="kicker">With the blessings of our families</div>
+        <p class="subtitle">Together with joy and love,</p>
+        <h1>Rojit <span class="amp">&amp;</span><br>Jessica</h1>
+        <p class="subtitle">invite you to celebrate the beginning<br>of their forever.</p>
+        <div class="date">11 · DECEMBER · 2026</div>
+        <div><button class="primary" id="openInvite">Open Invitation</button></div>
+        <div class="scrollhint">AN INVITATION FROM THE HEART ↓</div>
+      </div>
+    </header>
+
+    <main id="details" hidden>
+      <section>
+        <div class="section-inner">
+          <div class="ornament">✦ ❧ ✦</div>
+          <div class="kicker">A royal celebration</div>
+          <h2 class="section-title">Two hearts, <span class="gold">one journey</span></h2>
+          <p class="copy">With immense happiness and the love of our families, we invite you to join us as we celebrate our wedding and begin a beautiful new chapter together.</p>
+          <div class="photo-placeholder" id="photoArea">
+            <span style="font-size:42px">♕ ♡ ♕</span>
+            <small>Couple's photo can be added here</small>
+          </div>
+          <p class="copy gold">Your presence will make our day even more special.</p>
+          <div class="divider">❧ ❧ ❧</div>
+        </div>
+      </section>
+
+      <section style="background:#2b0712aa">
+        <div class="section-inner">
+          <div class="kicker">Save the date</div>
+          <h2 class="section-title">Counting down to <span class="gold">forever</span></h2>
+          <div class="countdown" aria-label="Countdown">
+            <div class="countbox"><strong id="days">--</strong><span>Days</span></div>
+            <div class="countbox"><strong id="hours">--</strong><span>Hours</span></div>
+            <div class="countbox"><strong id="mins">--</strong><span>Minutes</span></div>
+            <div class="countbox"><strong id="secs">--</strong><span>Seconds</span></div>
+          </div>
+          <p class="copy">Friday, 11 December 2026</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-inner">
+          <div class="kicker">The celebration</div>
+          <h2 class="section-title">Wedding <span class="gold">ceremony</span></h2>
+          <div class="event">
+            <div class="ornament">❧</div>
+            <h3>Ngariyanbam Rojit Singh</h3>
+            <p class="gold" style="font-size:22px">&amp;</p>
+            <h3>Aribam Jessica Sharma</h3>
+            <div class="divider">✦</div>
+            <p><strong>Friday, 11 December 2026</strong></p>
+            <p>Laishram Khulem Leikai<br>Developement Committee Community Hall</p>
+            <p>We look forward to celebrating with you.</p>
+            <div class="buttons">
+              <button class="primary" id="mapBtn">View venue on map</button>
+              <button class="ghost" id="rsvpBtn">RSVP / Share</button>
+            </div>
+          </div>
+          <p class="copy">With love, our families invite you to bless this special occasion with your presence.</p>
+          <div class="divider">❧ ✦ ❧</div>
+          <button class="ghost" id="musicBtn" aria-pressed="false">♫ Play soft background music</button>
+          <p style="font-size:11px;color:#d9b56d99;margin-top:12px">Music is optional and starts only when you tap the button.</p>
+        </div>
+      </section>
+    </main>
+    <footer>MADE WITH LOVE · ROJIT &amp; JESSICA · 2026</footer>
+  </div>
+</div>
+
+<div class="modal" id="rsvpModal" role="dialog" aria-modal="true" aria-labelledby="rsvpTitle">
+  <div class="modalbox">
+    <h2 class="section-title" id="rsvpTitle">A joyful reply</h2>
+    <p class="copy">Enter your name to prepare an RSVP message you can send to the couple.</p>
+    <input id="guestName" placeholder="Your name" aria-label="Your name">
+    <div class="buttons">
+      <button class="primary" id="sendRsvp">Prepare message</button>
+      <button class="ghost" id="closeModal">Close</button>
+    </div>
+    <p id="rsvpNote" style="font-size:12px;color:#f1d8a5"></p>
+  </div>
+</div>
+
+<script>
+const weddingDate = new Date("2026-12-11T00:00:00+05:30");
+const openInvite = document.getElementById("openInvite");
+const details = document.getElementById("details");
+openInvite.addEventListener("click",()=>{
+  details.hidden=false;
+  details.scrollIntoView({behavior:"smooth"});
+  openInvite.textContent="Invitation opened";
+  openInvite.disabled=true;
+  openInvite.style.opacity=".65";
+});
+function tick(){
+  const diff=weddingDate.getTime()-Date.now();
+  if(diff<=0){
+    ["days","hours","mins","secs"].forEach(id=>document.getElementById(id).textContent="0");
+    return;
+  }
+  document.getElementById("days").textContent=Math.floor(diff/86400000);
+  document.getElementById("hours").textContent=Math.floor(diff%86400000/3600000);
+  document.getElementById("mins").textContent=Math.floor(diff%3600000/60000);
+  document.getElementById("secs").textContent=Math.floor(diff%60000/1000);
+}
+tick();setInterval(tick,1000);
+
+document.getElementById("mapBtn").addEventListener("click",()=>{
+  const q=encodeURIComponent("Laishram Khulem Leikai Developement Committee Community Hall");
+  window.open("https://www.google.com/maps/search/?api=1&query="+q,"_blank","noopener");
+});
+const modal=document.getElementById("rsvpModal");
+document.getElementById("rsvpBtn").addEventListener("click",()=>{modal.classList.add("open");document.getElementById("guestName").focus()});
+document.getElementById("closeModal").addEventListener("click",()=>modal.classList.remove("open"));
+modal.addEventListener("click",e=>{if(e.target===modal)modal.classList.remove("open")});
+document.getElementById("sendRsvp").addEventListener("click",()=>{
+  const name=document.getElementById("guestName").value.trim();
+  if(!name){document.getElementById("rsvpNote").textContent="Please enter your name.";return;}
+  const msg=`Hello! I am ${name}. Thank you for inviting me to the wedding of Ngariyanbam Rojit Singh and Aribam Jessica Sharma on 11 December 2026.`;
+  const url="https://wa.me/?text="+encodeURIComponent(msg);
+  window.open(url,"_blank","noopener");
+  document.getElementById("rsvpNote").textContent="WhatsApp opened. Choose the recipient to send your RSVP.";
+});
+
+let audioCtx=null,oscillators=[],gainNode=null,musicPlaying=false;
+function startMusic(){
+  const AudioContext=window.AudioContext||window.webkitAudioContext;
+  if(!AudioContext){alert("Your browser does not support browser-generated music.");return;}
+  audioCtx=audioCtx||new AudioContext();
+  if(audioCtx.state==="suspended")audioCtx.resume();
+  gainNode=audioCtx.createGain();gainNode.gain.value=.035;gainNode.connect(audioCtx.destination);
+  // Gentle synthesized bell-like tones; no external audio file or paid music asset.
+  const notes=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];
+  notes.forEach((freq,i)=>{
+    const osc=audioCtx.createOscillator(),g=audioCtx.createGain();
+    osc.type="sine";osc.frequency.value=freq;
+    g.gain.value=.12;osc.connect(g);g.connect(gainNode);
+    osc.start();oscillators.push({osc,g});
+  });
+  musicPlaying=true;
+}
+function stopMusic(){
+  oscillators.forEach(({osc})=>{try{osc.stop()}catch(e){}});
+  oscillators=[];if(gainNode){gainNode.disconnect();gainNode=null;}
+  musicPlaying=false;
+}
+document.getElementById("musicBtn").addEventListener("click",()=>{
+  const btn=document.getElementById("musicBtn");
+  if(!musicPlaying){startMusic();btn.textContent="♫ Stop background music";btn.setAttribute("aria-pressed","true");}
+  else{stopMusic();btn.textContent="♫ Play soft background music";btn.setAttribute("aria-pressed","false");}
+});
+</script>
+</body>
+</html>
